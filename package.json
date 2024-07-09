@@ -2,12 +2,14 @@
   "name": "folder-generator",
   "displayName": "folder-generator",
   "type": "commonjs",
-  "description": "A Vscode extension to generate folders",
+  "description": "A Vscode extension to generate folders and files",
   "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/qqharry21/folder-generator.git"
   },
+  "publisher": "qqharry21",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.91.0"
   },
@@ -20,7 +22,7 @@
     "commands": [
       {
         "command": "folder-generator.generateFolders",
-        "title": "Generate Folders"
+        "title": "Generate Folders and Files"
       }
     ],
     "keybindings": [

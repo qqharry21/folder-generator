@@ -80,4 +80,16 @@ To add these keybindings, update your `package.json` file in the extension proje
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue.
 
+1. Clone the repo, install the dependencies. Running the following command `pnpm install`
+
+2. Add your feature or fix (in src/) with test coverage (in test/)
+
+3. Launch the extension and do some manual QA (via Debug > Launch Extension)
+
+4. Run the tests (via Debug > Launch Tests)
+
+5. Run the linter: `pnpm run lint`
+
+6. Open a PR
+
 **Enjoy!**
