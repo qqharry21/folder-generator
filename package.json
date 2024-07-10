@@ -3,7 +3,7 @@
   "displayName": "folder-generator",
   "type": "commonjs",
   "description": "A Vscode extension to generate folders and files",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/qqharry21/folder-generator.git"
