@@ -44,11 +44,18 @@ export async function createFoldersAndFiles(basePath: string, structure: any) {
   }
 }
 
-export function getAllFolders(rootPath: string): { label: string; description?: string }[] {
+export function getAllFolders(
+  rootPath: string,
+  ignoreList: string[]
+): { label: string; description?: string }[] {
   const folders: { label: string; description?: string }[] = [];
   function findFolders(folderPath: string, relativePath: string) {
     const files = fs.readdirSync(folderPath);
     for (const file of files) {
+      if (ignoreList.includes(file)) {
+        continue;
+      }
+
       const filePath = path.join(folderPath, file);
       const fileRelativePath = path.join(relativePath, file);
       if (fs.statSync(filePath).isDirectory()) {
