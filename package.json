@@ -38,7 +38,48 @@
         "command": "workbench.action.closePanel",
         "when": "panelFocus"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Folder Generator Configuration",
+      "properties": {
+        "folderGenerator.ignoreList": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "node_modules",
+            ".git",
+            "dist",
+            "build",
+            "out",
+            "coverage",
+            "tmp",
+            "temp",
+            ".vscode",
+            ".idea",
+            "logs",
+            ".DS_Store",
+            "__pycache__",
+            ".venv",
+            ".history",
+            ".cache",
+            ".next",
+            ".nuxt"
+          ],
+          "description": "List of folders to ignore when generating folders and files"
+        },
+        "folderGenerator.whitelist": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "List of folders to include even if they are in the ignore list"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "pnpm run package",

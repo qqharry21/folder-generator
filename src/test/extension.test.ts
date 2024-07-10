@@ -11,7 +11,7 @@ import { getRootPath } from '../lib/utils';
 suite('Extension Test Suite', () => {
   vscode.window.showInformationMessage('Start all tests.');
 
-  test('Folder and file creation with variables', async () => {
+  test('Folder and file creation', async () => {
     const rootPath = getRootPath();
     assert.ok(rootPath, 'Workspace folder is open');
 

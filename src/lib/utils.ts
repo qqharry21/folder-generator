@@ -15,3 +15,7 @@ export const showMessage = (type: MessageType, message: string, ...items: string
     return vscode.window.showWarningMessage(message, ...items);
   }
 };
+
+export const getExtensionConfig = <T>(key: string, defaultValue: T) => {
+  return vscode.workspace.getConfiguration('folderGenerator').get<T>(key, defaultValue);
+};
