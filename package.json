@@ -8,7 +8,8 @@
     "type": "git",
     "url": "https://github.com/qqharry21/folder-generator.git"
   },
-  "publisher": "qqharry21",
+  "icon": "images/icon.png",
+  "publisher": "harry-chen",
   "license": "MIT",
   "engines": {
     "vscode": "^1.91.0"
